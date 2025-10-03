@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+  
+  .animate-spin-reverse {
+    animation: spin 15s linear infinite reverse;
+  }
+  
+  .animate-fade-out {
+    animation: fadeOut 2s ease-out forwards;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
